@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\modo_conectado\\alquilerpeliculas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|solutionrelative:alquilerpeliculas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\modo_conectado\\alquilerpeliculas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|solutionrelative:alquilerpeliculas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\modo_conectado\\alquilerpeliculas\\datos\\peliculadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|solutionrelative:alquilerpeliculas\\datos\\peliculadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\modo_conectado\\alquilerpeliculas\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|solutionrelative:alquilerpeliculas\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\modo_conectado\\alquilerpeliculas\\entidades\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{605F917B-8C5A-43BF-A007-CE93C8C8B867}|AlquilerPeliculas\\AlquilerPeliculas.csproj|solutionrelative:alquilerpeliculas\\entidades\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Form1.cs",
+              "RelativeDocumentMoniker": "AlquilerPeliculas\\Form1.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Form1.cs",
+              "RelativeToolTip": "AlquilerPeliculas\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:39:44.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Form1.cs",
+              "RelativeDocumentMoniker": "AlquilerPeliculas\\Form1.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AlquilerPeliculas\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:39:33.164Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "AlquilerPeliculas\\Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Datos\\Conexion.cs",
+              "RelativeToolTip": "AlquilerPeliculas\\Datos\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:27:51.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Entidades\\Pelicula.cs",
+              "RelativeDocumentMoniker": "AlquilerPeliculas\\Entidades\\Pelicula.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Entidades\\Pelicula.cs",
+              "RelativeToolTip": "AlquilerPeliculas\\Entidades\\Pelicula.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:27:30.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PeliculaDao.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Datos\\PeliculaDao.cs",
+              "RelativeDocumentMoniker": "AlquilerPeliculas\\Datos\\PeliculaDao.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\modo_conectado\\AlquilerPeliculas\\Datos\\PeliculaDao.cs",
+              "RelativeToolTip": "AlquilerPeliculas\\Datos\\PeliculaDao.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:27:18.439Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
