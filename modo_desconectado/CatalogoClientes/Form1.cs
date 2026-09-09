@@ -116,7 +116,7 @@ public partial class Form1 : Form
     {
         ConfirmarEdicionDeGrilla();
 
-        if (!_clientes.HasChanges())
+        if (_clientes.GetChanges() is null)
         {
             MessageBox.Show("No hay cambios pendientes en memoria.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
