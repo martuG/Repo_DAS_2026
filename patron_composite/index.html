@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Composite · clase DAS 2026</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="hero">
+      <p class="marca">DAS 2026 · Patrones estructurales</p>
+      <div class="hero-cuerpo">
+        <div>
+          <h1>Composite</h1>
+          <p class="alias">También llamado objeto compuesto o árbol de objetos.</p>
+          <p class="lead">Organiza piezas en un árbol y deja que el cliente use ese árbol con la misma operación que usaría sobre una sola pieza.</p>
+        </div>
+        <div class="hero-arbol" aria-hidden="true">
+          <div class="mini caja">Caja
+            <div class="mini hoja">Hoja</div>
+            <div class="mini caja">Caja
+              <div class="mini hoja">Hoja</div>
+              <div class="mini hoja">Hoja</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="Secciones de la clase">
+      <a href="#problema">Problema</a>
+      <a href="#solucion">Solución</a>
+      <a href="#analogia">Analogía</a>
+      <a href="#estructura">Estructura</a>
+      <a href="#demo">En vivo</a>
+      <a href="#codigo">Código</a>
+      <a href="#implementacion">Cómo armarlo</a>
+      <a href="#cierre">Cierre</a>
+    </nav>
+
+    <main>
+      <section id="problema" class="seccion">
+        <p class="indice">01</p>
+        <h2>El problema</h2>
+        <p>Composite tiene sentido cuando el núcleo del sistema es un árbol. El caso clásico es un pedido: hay productos sueltos y cajas. Una caja guarda productos y también otras cajas. Esas cajas internas pueden guardar más productos o más cajas, sin un límite fijo de niveles.</p>
+        <p>La pregunta de negocio es simple: <strong>¿cuánto sale el pedido?</strong> En el mostrador se abren las cajas y se suman los precios. En código, esa idea se vuelve incómoda: hay que conocer cada clase, cada nivel de anidación y cómo recorrer cada uno. Con dos niveles se puede escribir a mano. Con una profundidad que no se conoce de antemano, el cliente se llena de casos especiales.</p>
+
+        <div class="dos">
+          <div>
+            <h3>Sin una operación común</h3>
+            <p>El código que calcula el total tiene que preguntar el tipo en cada piso del árbol. Un nivel nuevo obliga a abrir este método otra vez.</p>
+            <pre class="codigo"><code><span class="com">// Cada nivel repite la misma pregunta.</span>
+decimal total = 0;
+foreach (var item in pedido)
+{
+    if (item is Producto p)
+        total += p.Valor;
+    else if (item is Caja c)
+    {
+        total += c.Empaque;
+        foreach (var interno in c.Contenido)
+        {
+            if (interno is Producto p2)
+                total += p2.Valor;
+            else if (interno is Caja c2)
+            {
+                <span class="com">// ¿Y si adentro hay otra caja?</span>
+            }
+        }
+    }
+}</code></pre>
+          </div>
+          <aside class="nota">
+            <h3>Qué se rompe</h3>
+            <ul>
+              <li>El cliente conoce las clases concretas.</li>
+              <li>La profundidad queda escrita en el código, no en los datos.</li>
+              <li>Un tipo nuevo (un sobre, un bundle, un combo) obliga a tocar todos los recorridos.</li>
+            </ul>
+            <p>El árbol ya está en el dominio. El diseño todavía no lo reconoce.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="solucion" class="seccion">
+        <p class="indice">02</p>
+        <h2>La solución</h2>
+        <p>Productos y cajas pasan a compartir una operación, por ejemplo <code>Precio()</code>.</p>
+        <div class="pasos-idea">
+          <article>
+            <span>Hoja</span>
+            <h3>El producto responde</h3>
+            <p>Devuelve su propio precio. No tiene hijos a quienes preguntar.</p>
+          </article>
+          <article>
+            <span>Contenedor</span>
+            <h3>La caja reparte</h3>
+            <p>Pide <code>Precio()</code> a cada elemento, suma lo que vuelve y, si corresponde, agrega el empaque.</p>
+          </article>
+          <article>
+            <span>Recursión</span>
+            <h3>El árbol se recorre solo</h3>
+            <p>Si un hijo es otra caja, esa caja hace lo mismo con su contenido, hasta llegar a las hojas.</p>
+          </article>
+        </div>
+        <p>El cliente deja de inspeccionar el interior. Pide el precio de la raíz y espera un número. No necesita saber si esa raíz es un libro o un pedido de cuatro niveles.</p>
+        <pre class="codigo"><code><span class="com">// El cliente habla con la interfaz, no con las clases.</span>
+IComponente pedido = ArmarPedido();
+decimal total = pedido.Precio();</code></pre>
+        <p class="cita">La ventaja concreta: al invocar el método, cada objeto decide si responde o si pasa la pregunta hacia abajo.</p>
+      </section>
+
+      <section id="analogia" class="seccion">
+        <p class="indice">03</p>
+        <h2>Una analogía</h2>
+        <p>Un ejército está organizado por niveles. La orden nace arriba y baja: ejército, división, brigada, pelotón, escuadrón, soldados. Quien manda no arma una lista de cada soldado. Cada nivel sabe a quién tiene que transmitirla.</p>
+        <ol class="cadena" aria-label="Cadena de mando">
+          <li>Ejército</li>
+          <li>División</li>
+          <li>Brigada</li>
+          <li>Pelotón</li>
+          <li>Escuadrón</li>
+          <li>Soldados</li>
+        </ol>
+        <p>En Composite pasa lo mismo con el mensaje <code>Precio()</code>, <code>Dibujar()</code> o <code>Mover()</code>: entra por la raíz y cada contenedor lo reenvía a sus hijos.</p>
+      </section>
+
+      <section id="estructura" class="seccion">
+        <p class="indice">04</p>
+        <h2>Las cuatro piezas</h2>
+        <div class="diagrama" aria-label="Relación entre cliente, interfaz, hoja y contenedor">
+          <div class="rol cliente">
+            <small>Cliente</small>
+            <strong>Quien usa el árbol</strong>
+            <span>Solo ve la interfaz</span>
+          </div>
+          <p class="flecha">usa</p>
+          <div class="rol interfaz">
+            <small>Componente</small>
+            <strong>IComponente</strong>
+            <code>Precio()</code>
+          </div>
+          <div class="ramas">
+            <div class="rol hoja">
+              <small>Hoja</small>
+              <strong>Producto</strong>
+              <span>Sin hijos. Hace el trabajo.</span>
+            </div>
+            <div class="rol compuesto">
+              <small>Contenedor</small>
+              <strong>Caja</strong>
+              <span>Guarda hojas y otras cajas. Delega y resume.</span>
+            </div>
+          </div>
+          <p class="retorno">Cada hijo de la caja vuelve a ser un IComponente. Por eso el árbol puede crecer sin cambiar el cliente.</p>
+        </div>
+
+        <div class="grilla-4">
+          <article>
+            <h3>1. Componente</h3>
+            <p>Declara las operaciones que tienen sentido tanto en una pieza simple como en un grupo. En el pedido, esa operación es calcular el precio.</p>
+          </article>
+          <article>
+            <h3>2. Hoja</h3>
+            <p>Es el extremo del árbol. No contiene a nadie, así que no delega: el libro conoce su precio y lo devuelve.</p>
+          </article>
+          <article>
+            <h3>3. Contenedor</h3>
+            <p>Guarda una lista de componentes. No le importa si un hijo es producto o caja. Al recibir la pregunta, recorre la lista, junta los resultados y devuelve el suyo.</p>
+          </article>
+          <article>
+            <h3>4. Cliente</h3>
+            <p>Trabaja siempre contra la interfaz. Por eso el mismo código sirve para un objeto suelto y para una estructura grande.</p>
+          </article>
+        </div>
+
+        <div class="dos variante">
+          <article>
+            <h3>Dónde viven Agregar y Quitar</h3>
+            <p><strong>En la caja.</strong> La hoja no promete operaciones que no puede cumplir. Para armar el árbol, el código que compone tiene que saber que está hablando con un contenedor.</p>
+          </article>
+          <article>
+            <h3>La otra variante</h3>
+            <p><strong>En la interfaz.</strong> Así se agregan hijos sin preguntar el tipo. El costo es que la hoja hereda métodos vacíos o que lanzan error. Esa decisión tensiona la segregación de interfaces: la comodidad del cliente contra un contrato más honesto.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demo" class="seccion">
+        <p class="indice">05</p>
+        <h2>En vivo: el pedido de la librería</h2>
+        <p>El pedido es una caja. Adentro hay un libro, una caja de útiles y una mochila. La caja de útiles tiene su propio empaque. Antes de recorrer, calculá el total en voz alta.</p>
+        <div class="demo-grid">
+          <div>
+            <div id="arbol" class="arbol" aria-live="polite"></div>
+            <form id="form-alta" class="alta">
+              <div class="alta-campos">
+                <label>Dentro de
+                  <select id="padre"></select>
+                </label>
+                <label>Nombre
+                  <input id="nombre" maxlength="32" placeholder="Resaltador" required>
+                </label>
+                <label>Precio o empaque
+                  <input id="valor" type="number" min="0" step="1" value="6" required>
+                </label>
+              </div>
+              <div class="alta-acciones">
+                <button type="submit" value="producto">Agregar producto</button>
+                <button type="submit" class="secundario" value="caja">Agregar caja</button>
+                <button type="button" id="restaurar" class="texto">Volver al ejemplo</button>
+              </div>
+              <p class="ayuda">El número es el precio si agregás un producto, y el costo de empaque si agregás una caja.</p>
+            </form>
+          </div>
+          <aside class="recorrido">
+            <div class="panel-cliente">
+              <p class="marca">Cliente</p>
+              <p class="llamada"><code>pedido.Precio()</code></p>
+              <p id="total" class="total">—</p>
+              <p id="estado-total" class="ayuda">Todavía no se pidió el precio.</p>
+            </div>
+            <blockquote id="relato">El árbol ya está armado. El cliente todavía no hizo la llamada.</blockquote>
+            <ol id="bitacora" class="bitacora"></ol>
+            <div class="controles">
+              <button type="button" id="anterior">Anterior</button>
+              <button type="button" id="siguiente" class="principal">Paso siguiente</button>
+              <button type="button" id="reproducir">Reproducir</button>
+            </div>
+            <p class="ayuda">En el proyector, las flechas ← y → avanzan el recorrido cuando el cursor no está en un campo.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="codigo" class="seccion">
+        <p class="indice">06</p>
+        <h2>El mismo ejemplo en C#</h2>
+        <p>La hoja devuelve un dato propio. El contenedor no suma precios a mano: le pide a cada hijo la misma operación. Si el hijo es otra caja, esa llamada vuelve a entrar en <code>Caja.Precio()</code>.</p>
+        <pre class="codigo"><code><span class="pal">public interface</span> <span class="tip">IComponente</span>
+{
+    <span class="pal">string</span> Nombre { <span class="pal">get</span>; }
+    <span class="pal">decimal</span> Precio();
+}
+
+<span class="pal">public sealed class</span> <span class="tip">Producto</span> : <span class="tip">IComponente</span>
+{
+    <span class="pal">public string</span> Nombre { <span class="pal">get</span>; }
+    <span class="pal">private readonly decimal</span> _precio;
+
+    <span class="pal">public</span> Producto(<span class="pal">string</span> nombre, <span class="pal">decimal</span> precio)
+    {
+        Nombre = nombre;
+        _precio = precio;
+    }
+
+    <span class="pal">public decimal</span> Precio() => _precio;
+}
+
+<span class="pal">public sealed class</span> <span class="tip">Caja</span> : <span class="tip">IComponente</span>
+{
+    <span class="pal">private readonly</span> List&lt;<span class="tip">IComponente</span>&gt; _hijos = <span class="pal">new</span>();
+
+    <span class="pal">public string</span> Nombre { <span class="pal">get</span>; }
+    <span class="pal">public decimal</span> Empaque { <span class="pal">get</span>; }
+
+    <span class="pal">public</span> Caja(<span class="pal">string</span> nombre, <span class="pal">decimal</span> empaque)
+    {
+        Nombre = nombre;
+        Empaque = empaque;
+    }
+
+    <span class="pal">public void</span> Agregar(<span class="tip">IComponente</span> hijo) => _hijos.Add(hijo);
+    <span class="pal">public void</span> Quitar(<span class="tip">IComponente</span> hijo) => _hijos.Remove(hijo);
+
+    <span class="pal">public decimal</span> Precio()
+    {
+        <span class="pal">decimal</span> suma = Empaque;
+        <span class="pal">foreach</span> (<span class="tip">IComponente</span> hijo <span class="pal">in</span> _hijos)
+            suma += hijo.Precio(); <span class="com">// el hijo puede ser otra caja</span>
+        <span class="pal">return</span> suma;
+    }
+}</code></pre>
+
+        <details class="extra">
+          <summary>Otro caso: agrupar figuras</summary>
+          <p>El mismo esquema sirve en un editor. Un círculo se dibuja solo. Un grupo no dibuja trazos propios: pide <code>Dibujar()</code> y <code>Mover()</code> a cada figura, y alguna de esas figuras puede ser otro grupo.</p>
+          <pre class="codigo"><code><span class="pal">public interface</span> <span class="tip">IFigura</span>
+{
+    <span class="pal">void</span> Mover(<span class="pal">int</span> dx, <span class="pal">int</span> dy);
+    <span class="pal">void</span> Dibujar();
+}
+
+<span class="pal">public sealed class</span> <span class="tip">Grupo</span> : <span class="tip">IFigura</span>
+{
+    <span class="pal">private readonly</span> List&lt;<span class="tip">IFigura</span>&gt; _hijos = <span class="pal">new</span>();
+
+    <span class="pal">public void</span> Agregar(<span class="tip">IFigura</span> figura) => _hijos.Add(figura);
+
+    <span class="pal">public void</span> Mover(<span class="pal">int</span> dx, <span class="pal">int</span> dy)
+    {
+        <span class="pal">foreach</span> (<span class="tip">IFigura</span> hijo <span class="pal">in</span> _hijos)
+            hijo.Mover(dx, dy);
+    }
+
+    <span class="pal">public void</span> Dibujar()
+    {
+        <span class="pal">foreach</span> (<span class="tip">IFigura</span> hijo <span class="pal">in</span> _hijos)
+            hijo.Dibujar();
+    }
+}</code></pre>
+        </details>
+      </section>
+
+      <section id="implementacion" class="seccion">
+        <p class="indice">07</p>
+        <h2>Cómo implementarlo</h2>
+        <ol class="lista-guia">
+          <li>
+            <strong>Confirmá que el dominio es un árbol.</strong>
+            Separá elementos simples y contenedores. El contenedor tiene que poder guardar ambos.
+          </li>
+          <li>
+            <strong>Declará la interfaz</strong>
+            con operaciones que sirvan en los dos roles. Si un método solo lo entiende la hoja o solo el grupo, pensalo dos veces antes de subirlo al contrato común.
+          </li>
+          <li>
+            <strong>Creá las hojas.</strong>
+            Puede haber varias: producto, servicio, círculo, texto. Cada una resuelve la operación con sus propios datos.
+          </li>
+          <li>
+            <strong>Creá el contenedor</strong>
+            con una colección del tipo de la interfaz, no de una clase concreta. En la operación, delegá en los hijos y combiná lo que devuelven.
+          </li>
+          <li>
+            <strong>Definí alta y baja de hijos.</strong>
+            En esta clase viven en la caja. Si el armado del árbol tiene que ser uniforme para el cliente, se puede discutir subirlos a la interfaz y asumir el costo sobre las hojas.
+          </li>
+        </ol>
+      </section>
+
+      <section id="aplicabilidad" class="seccion">
+        <p class="indice">08</p>
+        <h2>Cuándo usarlo</h2>
+        <div class="dos">
+          <article class="tarjeta">
+            <h3>El modelo ya es un árbol</h3>
+            <p>Carpetas y archivos, menús con submenús, organigramas, figuras agrupadas, documentos con secciones, pedidos con empaques. El patrón aporta las dos piezas base: hoja y contenedor, con el mismo contrato.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>El cliente no debería distinguir</h3>
+            <p>Cuando el código que usa la estructura tiene que tratar igual a un elemento y a un grupo. La interfaz común evita una cadena de preguntas por tipo.</p>
+          </article>
+        </div>
+        <div class="dos balance">
+          <article>
+            <h3>A favor</h3>
+            <ul>
+              <li>Polimorfismo y recursión reemplazan un recorrido escrito a mano para cada nivel.</li>
+              <li>Un tipo nuevo de hoja entra sin reescribir al cliente ni al contenedor. El diseño queda abierto a la extensión.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>En contra</h3>
+            <ul>
+              <li>Si hoja y contenedor se parecen poco, la interfaz común se estira hasta volverse difícil de leer.</li>
+              <li>Forzar las mismas operaciones en los dos roles puede esconder métodos que solo uno de los dos puede cumplir.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="relaciones" class="seccion">
+        <p class="indice">09</p>
+        <h2>Cómo se cruza con otros patrones</h2>
+        <div class="grilla-rel">
+          <article><h3>Builder</h3><p>Puede construir el árbol por pasos, incluso llamándose a sí mismo cuando una parte es otro árbol.</p></article>
+          <article><h3>Chain of Responsibility</h3><p>Una hoja puede reenviar la petición a su padre, y ese padre al suyo, hasta la raíz.</p></article>
+          <article><h3>Iterator</h3><p>Recorre los nodos sin que el cliente escriba la recursión.</p></article>
+          <article><h3>Visitor</h3><p>Agrega una operación nueva sobre todo el árbol sin modificar cada clase de nodo.</p></article>
+          <article><h3>Flyweight</h3><p>Las hojas que se repiten pueden compartirse para ocupar menos memoria.</p></article>
+          <article><h3>Decorator</h3><p>También compone objetos. El decorator envuelve uno y le suma comportamiento. El composite agrupa varios y resume lo que devuelven. Se pueden combinar: decorar un nodo puntual del árbol.</p></article>
+          <article><h3>Prototype</h3><p>Clona un árbol ya armado en lugar de reconstruirlo pieza por pieza.</p></article>
+        </div>
+      </section>
+
+      <section id="cierre" class="seccion">
+        <p class="indice">10</p>
+        <h2>Para charlar</h2>
+        <ol class="preguntas">
+          <li>Si aparece un sobre, que también puede contener productos y meterse dentro de una caja, ¿qué clase nueva hace falta y qué código no se toca?</li>
+          <li>¿Dónde dejarías <code>Agregar</code>: solo en la caja, o también en la interfaz? ¿Qué gana el cliente y qué pierde la hoja?</li>
+          <li>El pedido ahora también tiene que informar el peso. ¿En qué tipo declarás la operación para no volver al recorrido con <code>if</code>?</li>
+        </ol>
+        <p class="cita">Idea para cerrar: una sola operación, dos formas de cumplirla. La hoja responde. El contenedor reparte la pregunta y combina las respuestas.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Clase de DAS 2026. El recorrido conceptual sigue al artículo <a href="https://refactoring.guru/es/design-patterns/composite">Composite de Refactoring.Guru</a>. El texto, el ejemplo de la librería y la página son material propio para proyectar en clase.</p>
+    </footer>
+  </div>
+  <script src="clase.js"></script>
+</body>
+</html>
