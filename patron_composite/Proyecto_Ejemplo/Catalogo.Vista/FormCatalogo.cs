@@ -24,7 +24,7 @@ public partial class FormCatalogo : Form
         {
             MessageBox.Show(
                 "No se pudo conectar a SQL Server LocalDB.\n" +
-                "Verificá que esté instalado o ajustá la cadena en Catalogo.Controlador/Datos/Conexion.cs.\n\n" +
+                "Verificá que esté instalado o ajustá la cadena en Catalogo.Modelo/Datos/Conexion.cs.\n\n" +
                 ex.Message,
                 "Error de conexión",
                 MessageBoxButtons.OK,

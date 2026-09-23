@@ -1,21 +1,20 @@
-using Catalogo.Controlador.Datos;
 using Catalogo.Modelo;
+using Catalogo.Modelo.Repositorios;
 
 namespace Catalogo.Controlador;
 
 public class CatalogoControlador
 {
-    private readonly ComponenteDao _dao = new();
+    private readonly IComponenteRepositorio _repositorio = new ComponenteRepositorio();
 
     public void Inicializar()
     {
-        Conexion.AsegurarBaseDeDatos();
+        _repositorio.Inicializar();
     }
 
     public IReadOnlyList<IComponente> ListarRaices()
     {
-        List<RegistroComponente> registros = _dao.Listar();
-        return EnsambladorCatalogo.Armar(registros);
+        return _repositorio.ListarRaices();
     }
 
     public int AgregarProducto(string nombre, decimal precioUnitario, int? cajaPadreId)
@@ -27,7 +26,7 @@ public class CatalogoControlador
         }
 
         ExigirCajaSiHayPadre(cajaPadreId);
-        return _dao.Insertar(nombre.Trim(), esCaja: false, precioUnitario, null, cajaPadreId);
+        return _repositorio.Agregar(nombre.Trim(), esCaja: false, precioUnitario, null, cajaPadreId);
     }
 
     public int AgregarCaja(string nombre, decimal costoEmpaque, int? cajaPadreId)
@@ -39,18 +38,18 @@ public class CatalogoControlador
         }
 
         ExigirCajaSiHayPadre(cajaPadreId);
-        return _dao.Insertar(nombre.Trim(), esCaja: true, null, costoEmpaque, cajaPadreId);
+        return _repositorio.Agregar(nombre.Trim(), esCaja: true, null, costoEmpaque, cajaPadreId);
     }
 
     public void Quitar(int id)
     {
-        if (_dao.ContarHijos(id) > 0)
+        if (_repositorio.ContarHijos(id) > 0)
         {
             throw new InvalidOperationException(
                 "Esa caja todavía tiene productos u otras cajas adentro. Quitá primero el contenido.");
         }
 
-        if (_dao.Eliminar(id) == 0)
+        if (_repositorio.Eliminar(id) == 0)
         {
             throw new InvalidOperationException("No se encontró el componente.");
         }
@@ -63,7 +62,7 @@ public class CatalogoControlador
             return;
         }
 
-        bool? esCaja = _dao.EsCaja(padreId.Value);
+        bool? esCaja = _repositorio.EsCaja(padreId.Value);
         if (esCaja is null)
         {
             throw new InvalidOperationException("No existe la caja elegida.");

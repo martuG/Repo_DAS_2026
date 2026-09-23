@@ -1,43 +1,23 @@
 using Microsoft.Data.SqlClient;
 using Catalogo.Modelo;
+using Catalogo.Modelo.Datos;
 
-namespace Catalogo.Controlador.Datos;
+namespace Catalogo.Modelo.Repositorios;
 
-public class ComponenteDao
+public class ComponenteRepositorio : IComponenteRepositorio
 {
-    public List<RegistroComponente> Listar()
+    public void Inicializar()
     {
-        List<RegistroComponente> registros = new();
-
-        using SqlConnection conexion = Conexion.Crear();
-        conexion.Open();
-
-        using SqlCommand comando = new SqlCommand(
-            """
-            SELECT Id, Nombre, EsCaja, PrecioUnitario, CostoEmpaque, PadreId
-            FROM Componentes
-            ORDER BY Id
-            """,
-            conexion);
-
-        using SqlDataReader lector = comando.ExecuteReader();
-        while (lector.Read())
-        {
-            registros.Add(new RegistroComponente
-            {
-                Id = (int)lector["Id"],
-                Nombre = lector["Nombre"].ToString() ?? string.Empty,
-                EsCaja = (bool)lector["EsCaja"],
-                PrecioUnitario = lector["PrecioUnitario"] is DBNull ? 0 : Convert.ToDecimal(lector["PrecioUnitario"]),
-                CostoEmpaque = lector["CostoEmpaque"] is DBNull ? 0 : Convert.ToDecimal(lector["CostoEmpaque"]),
-                PadreId = lector["PadreId"] is DBNull ? null : (int)lector["PadreId"]
-            });
-        }
-
-        return registros;
+        Conexion.AsegurarBaseDeDatos();
     }
 
-    public int Insertar(string nombre, bool esCaja, decimal? precioUnitario, decimal? costoEmpaque, int? padreId)
+    public IReadOnlyList<IComponente> ListarRaices()
+    {
+        List<RegistroComponente> registros = ListarRegistros();
+        return EnsambladorCatalogo.Armar(registros);
+    }
+
+    public int Agregar(string nombre, bool esCaja, decimal? precioUnitario, decimal? costoEmpaque, int? padreId)
     {
         using SqlConnection conexion = Conexion.Crear();
         conexion.Open();
@@ -102,5 +82,37 @@ public class ComponenteDao
         comando.Parameters.AddWithValue("@Id", id);
 
         return comando.ExecuteNonQuery();
+    }
+
+    private static List<RegistroComponente> ListarRegistros()
+    {
+        List<RegistroComponente> registros = new();
+
+        using SqlConnection conexion = Conexion.Crear();
+        conexion.Open();
+
+        using SqlCommand comando = new SqlCommand(
+            """
+            SELECT Id, Nombre, EsCaja, PrecioUnitario, CostoEmpaque, PadreId
+            FROM Componentes
+            ORDER BY Id
+            """,
+            conexion);
+
+        using SqlDataReader lector = comando.ExecuteReader();
+        while (lector.Read())
+        {
+            registros.Add(new RegistroComponente
+            {
+                Id = (int)lector["Id"],
+                Nombre = lector["Nombre"].ToString() ?? string.Empty,
+                EsCaja = (bool)lector["EsCaja"],
+                PrecioUnitario = lector["PrecioUnitario"] is DBNull ? 0 : Convert.ToDecimal(lector["PrecioUnitario"]),
+                CostoEmpaque = lector["CostoEmpaque"] is DBNull ? 0 : Convert.ToDecimal(lector["CostoEmpaque"]),
+                PadreId = lector["PadreId"] is DBNull ? null : (int)lector["PadreId"]
+            });
+        }
+
+        return registros;
     }
 }

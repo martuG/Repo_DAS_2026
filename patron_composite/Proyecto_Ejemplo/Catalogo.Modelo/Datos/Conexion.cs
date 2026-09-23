@@ -1,6 +1,6 @@
 using Microsoft.Data.SqlClient;
 
-namespace Catalogo.Controlador.Datos;
+namespace Catalogo.Modelo.Datos;
 
 public static class Conexion
 {
