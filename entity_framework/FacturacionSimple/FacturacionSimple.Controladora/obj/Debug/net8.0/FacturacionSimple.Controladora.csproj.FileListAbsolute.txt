@@ -1,0 +1,16 @@
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\bin\Debug\net8.0\FacturacionSimple.Controladora.deps.json
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\bin\Debug\net8.0\FacturacionSimple.Controladora.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\bin\Debug\net8.0\FacturacionSimple.Controladora.pdb
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\bin\Debug\net8.0\FacturacionSimple.Modelo.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\bin\Debug\net8.0\FacturacionSimple.Modelo.pdb
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.sourcelink.json
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\Facturac.92D02478.Up2Date
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\refint\FacturacionSimple.Controladora.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\FacturacionSimple.Controladora.pdb
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Controladora\obj\Debug\net8.0\ref\FacturacionSimple.Controladora.dll

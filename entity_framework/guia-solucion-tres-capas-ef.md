@@ -505,4 +505,10 @@ Modelo (entidades + DbContext + acceso a datos)
 
 ---
 
+## Ejemplo en esta carpeta
+
+Hay un proyecto completo de referencia en [`FacturacionSimple/`](FacturacionSimple/): facturación simple con `Producto`, `Factura` y `DetalleFactura`, respetando esta arquitectura (EF y acceso a datos en el Modelo). Ver el `README.md` de esa carpeta.
+
+---
+
 *Material orientado a prácticos de Desarrollo y Arquitectura de Software — .NET 8 + EF Core 9.0.0.*

@@ -1,0 +1,15 @@
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\bin\Debug\net8.0\FacturacionSimple.Modelo.deps.json
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\bin\Debug\net8.0\FacturacionSimple.Modelo.runtimeconfig.json
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\bin\Debug\net8.0\FacturacionSimple.Modelo.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\bin\Debug\net8.0\FacturacionSimple.Modelo.pdb
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.sourcelink.json
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\refint\FacturacionSimple.Modelo.dll
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.pdb
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\FacturacionSimple.Modelo.genruntimeconfig.cache
+C:\Users\marti\OneDrive\Escritorio\Clases DAS\Repo_DAS_2026\entity_framework\FacturacionSimple\FacturacionSimple.Modelo\obj\Debug\net8.0\ref\FacturacionSimple.Modelo.dll

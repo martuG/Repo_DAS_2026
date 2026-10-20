@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\facturacionsimple\\facturacionsimple.modelo\\datos\\facturaciondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|solutionrelative:facturacionsimple.modelo\\datos\\facturaciondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\facturacionsimple\\facturacionsimple.modelo\\datos\\facturadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|solutionrelative:facturacionsimple.modelo\\datos\\facturadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\facturacionsimple\\facturacionsimple.modelo\\entidades\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|solutionrelative:facturacionsimple.modelo\\entidades\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\facturacionsimple\\facturacionsimple.modelo\\entidades\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CA632F-6BE9-4DE2-9E43-B54636B8C124}|FacturacionSimple.Modelo\\FacturacionSimple.Modelo.csproj|solutionrelative:facturacionsimple.modelo\\entidades\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FacturacionDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Datos\\FacturacionDbContext.cs",
+              "RelativeDocumentMoniker": "FacturacionSimple.Modelo\\Datos\\FacturacionDbContext.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Datos\\FacturacionDbContext.cs",
+              "RelativeToolTip": "FacturacionSimple.Modelo\\Datos\\FacturacionDbContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:02:24.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacturaDatos.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Datos\\FacturaDatos.cs",
+              "RelativeDocumentMoniker": "FacturacionSimple.Modelo\\Datos\\FacturaDatos.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Datos\\FacturaDatos.cs",
+              "RelativeToolTip": "FacturacionSimple.Modelo\\Datos\\FacturaDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:02:23.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Entidades\\Factura.cs",
+              "RelativeDocumentMoniker": "FacturacionSimple.Modelo\\Entidades\\Factura.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Entidades\\Factura.cs",
+              "RelativeToolTip": "FacturacionSimple.Modelo\\Entidades\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:02:09.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetalleFactura.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Entidades\\DetalleFactura.cs",
+              "RelativeDocumentMoniker": "FacturacionSimple.Modelo\\Entidades\\DetalleFactura.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\FacturacionSimple\\FacturacionSimple.Modelo\\Entidades\\DetalleFactura.cs",
+              "RelativeToolTip": "FacturacionSimple.Modelo\\Entidades\\DetalleFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T23:02:06.463Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
