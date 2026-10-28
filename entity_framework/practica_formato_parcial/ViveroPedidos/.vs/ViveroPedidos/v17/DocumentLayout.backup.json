@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\practica_formato_parcial\\viveropedidos\\viveropedidos.vista\\formplantas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|solutionrelative:viveropedidos.vista\\formplantas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\practica_formato_parcial\\viveropedidos\\viveropedidos.vista\\formplantas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|solutionrelative:viveropedidos.vista\\formplantas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\practica_formato_parcial\\viveropedidos\\viveropedidos.vista\\formconsultarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|solutionrelative:viveropedidos.vista\\formconsultarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\practica_formato_parcial\\viveropedidos\\viveropedidos.vista\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|solutionrelative:viveropedidos.vista\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|c:\\users\\marti\\onedrive\\escritorio\\clases das\\repo_das_2026\\entity_framework\\practica_formato_parcial\\viveropedidos\\viveropedidos.vista\\formplantas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B7D4E18-5C90-4A6F-8D23-1E6A9C4F70B5}|ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj|solutionrelative:viveropedidos.vista\\formplantas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Controladora\\PlantaControladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +78,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "FormPlantas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPlantas.cs",
+              "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormPlantas.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPlantas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ViveroPedidos.Vista\\FormPlantas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T00:09:50.227Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormConsultarPedidos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormConsultarPedidos.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormConsultarPedidos.cs",
@@ -86,18 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PedidoControladora.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Controladora\\PedidoControladora.cs",
-              "RelativeDocumentMoniker": "ViveroPedidos.Controladora\\PedidoControladora.cs",
-              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Controladora\\PedidoControladora.cs",
-              "RelativeToolTip": "ViveroPedidos.Controladora\\PedidoControladora.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T00:08:25.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlantaControladora.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Controladora\\PlantaControladora.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Controladora\\PlantaControladora.cs",
@@ -109,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Planta.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Modelo\\Entidades\\Planta.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Modelo\\Entidades\\Planta.cs",
@@ -121,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PedidoDetalle.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Modelo\\Entidades\\PedidoDetalle.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Modelo\\Entidades\\PedidoDetalle.cs",
@@ -133,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Modelo\\Entidades\\Pedido.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Modelo\\Entidades\\Pedido.cs",
@@ -145,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FormRegistrarPedido.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormRegistrarPedido.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormRegistrarPedido.cs",
@@ -157,7 +162,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "FormPlantas.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPlantas.cs",
+              "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormPlantas.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPlantas.cs",
+              "RelativeToolTip": "ViveroPedidos.Vista\\FormPlantas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T00:07:55.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PedidoControladora.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Controladora\\PedidoControladora.cs",
+              "RelativeDocumentMoniker": "ViveroPedidos.Controladora\\PedidoControladora.cs",
+              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Controladora\\PedidoControladora.cs",
+              "RelativeToolTip": "ViveroPedidos.Controladora\\PedidoControladora.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T00:08:25.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FormPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormPrincipal.cs",
@@ -169,19 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormPlantas.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPlantas.cs",
-              "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormPlantas.cs",
-              "ToolTip": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormPlantas.cs",
-              "RelativeToolTip": "ViveroPedidos.Vista\\FormPlantas.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T00:07:55.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FormConsultarPedidos.cs",
               "DocumentMoniker": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\FormConsultarPedidos.cs",
               "RelativeDocumentMoniker": "ViveroPedidos.Vista\\FormConsultarPedidos.cs",

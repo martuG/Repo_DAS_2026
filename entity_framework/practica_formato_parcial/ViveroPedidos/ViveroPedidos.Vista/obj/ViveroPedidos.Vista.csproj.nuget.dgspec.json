@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj": {}
+    "C:\\Users\\Navegador\\Source\\Repos\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj": {
+    "C:\\Users\\Navegador\\Source\\Repos\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj",
+        "projectUniqueName": "C:\\Users\\Navegador\\Source\\Repos\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj",
         "projectName": "ViveroPedidos.Vista",
-        "projectPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\OneDrive\\Escritorio\\Clases DAS\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\obj\\",
+        "projectPath": "C:\\Users\\Navegador\\Source\\Repos\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\ViveroPedidos.Vista.csproj",
+        "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Navegador\\Source\\Repos\\Repo_DAS_2026\\entity_framework\\practica_formato_parcial\\ViveroPedidos\\ViveroPedidos.Vista\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Navegador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Navegador\\SQLClient": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

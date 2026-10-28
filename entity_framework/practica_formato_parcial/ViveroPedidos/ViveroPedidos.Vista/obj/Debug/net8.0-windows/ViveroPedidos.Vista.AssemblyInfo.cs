@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ViveroPedidos.Vista")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3ba93e1115a15909bb6926a9a823a8270c59ef4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bef816a0e47efa2004344e6c92a3e20da6775fe6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ViveroPedidos.Vista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ViveroPedidos.Vista")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
